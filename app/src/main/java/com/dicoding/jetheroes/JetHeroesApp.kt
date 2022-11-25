@@ -91,7 +91,8 @@ fun JetHeroesApp(
             ScrollToTopButton(
                 onClick = {
                     scope.launch {
-                        listState.scrollToItem(index = 0)
+                        //listState.scrollToItem()
+                        listState.animateScrollToItem(index = 0)
                     }
                 })
         }
